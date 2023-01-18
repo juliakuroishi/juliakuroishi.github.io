@@ -1,2 +1,2 @@
 # juliakuroishi.github.io
-Meu portfólio
+Meu portfólio: juliakuroishi.github.io
