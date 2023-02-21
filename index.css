@@ -1,14 +1,77 @@
 /*comentário teste*/
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #061030;
-    margin-top: 180px;
-    margin-left: 100px;
+    font-size: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(21, 19, 136); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(22, 9, 95), rgb(89, 51, 139));
 }
-
-a{
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
     color:azure;
+    gap: 20px;
 }
 
+.cabecalho-menu{
+    display: flex;
+    gap: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.portfolio{
+   padding-right: 5px;
+   font-weight: 500px;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+
+.cabecalho-item{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabecalho-foto{
+    width: 30px;;
+}
+
+.principal{
+    border-top: 0.4px solid azure;
+    margin-bottom: 48px;
+}
+
+.minha-foto{
+    width: 200px;
+    padding-top: 30px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: beige;
+    
+}
+
+.saudacao{
+    font-size: 30px;
+}
+
+.meu-nome{
+    font-size: 40px;
+}
