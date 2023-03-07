@@ -9,12 +9,13 @@
     text-decoration: none;
 }
 html {
-    height: 100%;
+    height: 100vh;
     background-color: rgb(21, 19, 136); /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, rgb(22, 9, 95), rgb(89, 51, 139));
 }
 
 body {
+    height: 100%;
     font-size: 100%;
     font-family: 'Nunito Sans', sans-serif;
     min-height: 100vh;
@@ -55,71 +56,58 @@ body {
 }
 
 .principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 0.4px solid azure;
-    height: 100%;
+    height: calc(100% - 90px);
     width: 100%;
-    height: 100%;
 }
 
 .conteudo-principal{
     display: flex;
-    margin-top: 150px;
     color: beige;
     align-content: center;
-    justify-content: space-around;
-    
-    
+    align-items:center;
+    gap: 200px; 
 }
 
+@media (max-width: 1200px){
+    .conteudo-principal{
+        flex-direction: column;
+    }
+}
 
 .div-principal{
     font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    padding-left: 25%;
-    
 }
 
 
 .div-secundaria{
-    display: flex;
-    flex-direction: column;
-    
-    width: 600px;
-    padding-top: 20px;
-    padding-left: 25%;
-    font-size: 16.5px;
-    
+    font-size: 16.5px;   
 }
+
 .linha1{
-    display: block;
     border-top:0.5px solid azure;
     padding-top: 30px;
     font-size: 22px;
 }
+
 .conteudo-imagem{
-    display: block;
-    width: 50%;
+    position: relative;
+    padding: 0 50px;
 }
 
-.minha-foto{
-    display: flex;
-    width: 200px;
-    position: fixed;
-    right: 25%;
-    z-index: 1;
-    top: 125px;
 
-}
 .rectangle {
-    display: flex;
-    width: 616px;
-    height: 200px;
+    position: absolute;
+    top: 100px;
+    right: -150px;
     background-color: #270d70;
     align-items: center;
-    position: absolute;
-    right: 0;
-    opacity: .5;
+    opacity: .6;
+    height: 200px;
+    width: 450px;
+    z-index: -1;
   }
 
