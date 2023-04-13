@@ -62,6 +62,7 @@ body {
     border-top: 0.4px solid azure;
     height: calc(100% - 90px);
     width: 100%;
+    flex-direction: column;
 }
 
 .conteudo-principal{
@@ -111,3 +112,18 @@ body {
     z-index: -1;
   }
 
+.quem-sou-eu{
+    position: relative;
+    display: flex;
+    
+}
+.habilidades{
+    position: relative;
+    display: flex;
+    
+}
+.meu-contato{
+    position: relative;
+    display: flex;
+    
+}

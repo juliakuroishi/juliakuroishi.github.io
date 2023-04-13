@@ -1,1 +1,1 @@
-//alert("Porfólio ainda em construção :)")
+alert("Porfólio ainda em construção :)");
