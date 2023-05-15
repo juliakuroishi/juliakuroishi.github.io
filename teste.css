@@ -8,10 +8,13 @@
 }
 
 html {
-    background-color: rgb(21, 19, 136); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, rgb(22, 9, 95), rgb(89, 51, 139));
+    position: relative;
+    background:linear-gradient(180deg, #5170FF 0%, #FF66C4 100%);
+    background-color: rgba(81, 112, 255, 1); /* For browsers that do not support gradients */
     color:azure;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 body {
     height: 100%;
@@ -72,6 +75,7 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;   
+    gap: 30px;
 }
 
 .conteudo-principal{
@@ -81,7 +85,7 @@ main{
     font-size: 150%;
 
     width: 100%;
-    border: 15px solid green;
+    border: 15px solid ;
     padding: 100px;
     margin: 50px;
 }
@@ -89,7 +93,12 @@ main{
 .quem-sou-eu{
     border: 15px solid green;
     padding: 50px;
-    margin: 20px;
+    
+
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-size: 100%;
 }
 .conteudo-imagem{
     border: blue;
@@ -98,6 +107,7 @@ main{
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
+    gap: 30px
 }
 
 .meu-contato{

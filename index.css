@@ -1,4 +1,3 @@
-/*comentário teste*/
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
@@ -9,9 +8,11 @@
     text-decoration: none;
 }
 html {
-    height: 100vh;
-    background-color: rgb(21, 19, 136); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, rgb(22, 9, 95), rgb(89, 51, 139));
+    position: relative;
+    background:linear-gradient(180deg, #5170FF 0%, #FF66C4 100%);
+    background-color: rgba(81, 112, 255, 1); /* For browsers that do not support gradients */
+    color:azure;
+    font-family: 'Inter';
 }
 
 body {
@@ -19,111 +20,30 @@ body {
     font-size: 100%;
     font-family: 'Nunito Sans', sans-serif;
     min-height: 100vh;
-    margin: 0 auto;
-}
-.header{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 25px;
-    color:azure;
-    gap: 20px;
-}
-
-.cabecalho-menu{
-    display: flex;
-    gap: 30px;
-    font-family: 'Nunito Sans', sans-serif;
-    
-}
-
-.portfolio{
-   padding-right: 5px;
-   font-weight: 500px;
-   font-size: 20px;
-   font-family: 'Courier New', Courier, monospace;
-
-}
-
-.cabecalho-item{
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.cabecalho-foto{
-    width: 30px;;
-}
-
-.principal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 0.4px solid azure;
-    height: calc(100% - 90px);
-    width: 100%;
     flex-direction: column;
-}
-
-.conteudo-principal{
-    display: flex;
-    color: beige;
-    align-content: center;
-    align-items:center;
-    gap: 200px; 
-}
-
-@media (max-width: 1200px){
-    .conteudo-principal{
-        flex-direction: column;
-    }
+    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .div-principal{
-    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 150%;
 }
-
 
 .div-secundaria{
-    font-size: 16.5px;   
-}
-
-.linha1{
-    border-top:0.5px solid azure;
-    padding-top: 30px;
-    font-size: 22px;
-}
-
-.conteudo-imagem{
-    position: relative;
-    padding: 0 50px;
-}
-
-
-.rectangle {
-    position: absolute;
-    top: 100px;
-    right: -150px;
-    background-color: #270d70;
-    align-items: center;
-    opacity: .6;
-    height: 200px;
-    width: 450px;
-    z-index: -1;
-  }
-
-.quem-sou-eu{
-    position: relative;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 120%;
 }
-.habilidades{
-    position: relative;
+
+.quemsou{
     display: flex;
-    
-}
-.meu-contato{
-    position: relative;
-    display: flex;
-    
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 120%;
 }
