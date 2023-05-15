@@ -1,2 +1,3 @@
 # juliakuroishi.github.io
-Meu portfólio
+Você pode acessar meu portfólio aqui: https://juliakuroishi.github.io/
+
