@@ -1,0 +1,8 @@
+Estrutura do site:
+    1. Menu de navegação - nav
+    2. Conteúdo principal contendo x sections:
+        a. Section de apresetação
+        b. Section sobre habilidades
+        c. Section sobre projetos
+
+    3. Rodapé para conter o autor do site

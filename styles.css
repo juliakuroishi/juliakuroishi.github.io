@@ -1,0 +1,69 @@
+:root {
+    /*   core   */
+    --cor-primaria: #E3E8EA ;
+    --cor-secundaria: #000 ;
+    --cor-destaque:#CDBCF2 ;
+}
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    height: 50px;
+    border-bottom: 1px solid #d5cece;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    position: fixed; /* Fixa o nav na tela */
+            top: 0;          /* Alinha o nav ao topo da tela */
+            left: 0;         /* Alinha o nav ao lado esquerdo da tela */
+            width: 100%;     /* Faz o nav ocupar toda a largura da tela */
+}
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#apresentacao {
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    font-size: 30px;
+    a{
+        font-size: medium;
+    }
+}
+
+#habilidades{
+    height: 100vh;
+    
+    .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 130px);
+        align-items: center;
+        justify-items: center;
+    }
+    img {
+        width: 40px;
+    }
+}
+
+#projetos{
+    height: 100vh;
+}
+
+#contato {
+    height: 100vh;
+}
