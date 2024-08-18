@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-    height: 50px;
+    height: 70px;
     border-bottom: 1px solid #d5cece;
     display: flex;
     justify-content: flex-end;
@@ -26,6 +26,8 @@ nav {
             top: 0;          /* Alinha o nav ao topo da tela */
             left: 0;         /* Alinha o nav ao lado esquerdo da tela */
             width: 100%;     /* Faz o nav ocupar toda a largura da tela */
+    font-size: 1.3rem;
+    background-color: var(--cor-primaria);
 }
 ul {
     display: flex;
@@ -40,21 +42,25 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 95px;
+    margin-left: 105px;
     font-size: 30px;
     h2{
         color: var(--cor-destaque);
+        font-weight: 800;
+        font-size: 3.2rem;
     }
     p{
-        font-weight: 800;
+        font-weight: 700;
+        font-size: 2.5rem;
     }
     a{
-        font-size:large;
+        font-size: 1.5rem;
     }
 }
 
 .titulo {
-    margin: 20px 0 30px 40px;
+    
+    font-size: 2rem;
 }
 
 #habilidades{
@@ -66,6 +72,9 @@ ul {
         grid-template-rows: repeat(2, 130px);
         align-items: center;
         justify-items: center;
+    }
+    p{
+        font-size: 1.2rem;
     }
     img {
         width: 40px;
@@ -90,5 +99,13 @@ ul {
         flex-direction: column;
         align-items: center;
         gap: 8px;
+        p {
+            font-size: 1.2rem;
+        }
     }
 }
+
+.conteudo-secundario {
+    width: 85%; /* A div ocupará 90% da largura da página */
+    margin: 0 auto; /* Centraliza a div horizontalmente */
+  }v
