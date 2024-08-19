@@ -1,8 +1,20 @@
 :root {
-    /*   cores  */
+    /*   cores claras */
     --cor-primaria: #E3E8EA ;
     --cor-secundaria: #CDBCF2 ;
     --cor-destaque: #5613e7 ;
+
+    /* cores escuras  */
+    --cor-primaria-escura: #000;
+    --cor-secundaria-escura: #000;
+    --cor-destaque-escura: #a07ee9;
+
+    /* cores de texto */
+    --texto-preto: #000;
+    --texto-branco: #fff;
+    --texto-cinza-claro: #585858;
+    --texto-cinza-escuro: #fff;
+    
 }
 
 * {
@@ -68,16 +80,30 @@ ul {
     
     .skill {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
         grid-template-rows: repeat(2, 130px);
         align-items: center;
         justify-items: center;
+        margin-top: 50px;
+        gap: 30px;
+
+        .skill-individual{
+            width: 200px;
+            height: 150px;
+            background-color: var(--cor-secundaria);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10%;
+            gap: 5px;
+        }
     }
     p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     img {
-        width: 40px;
+        width: 50px;
     }
 }
 
@@ -108,4 +134,4 @@ ul {
 .conteudo-secundario {
     width: 85%; /* A div ocupará 90% da largura da página */
     margin: 0 auto; /* Centraliza a div horizontalmente */
-  }v
+  }
