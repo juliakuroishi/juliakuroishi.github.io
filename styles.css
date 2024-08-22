@@ -1,20 +1,18 @@
 :root {
-    /*   cores claras */
-    --cor-primaria: #E3E8EA ;
-    --cor-secundaria: #CDBCF2 ;
-    --cor-destaque: #5613e7 ;
-
-    /* cores escuras  */
-    --cor-primaria-escura: #000;
-    --cor-secundaria-escura: #000;
-    --cor-destaque-escura: #a07ee9;
-
-    /* cores de texto */
-    --texto-preto: #000;
-    --texto-branco: #fff;
-    --texto-cinza-claro: #585858;
-    --texto-cinza-escuro: #fff;
+    --background-color: #E8D9F0;
+    --contrast-color: #C3A9E0;
+    --highlight-color: #6D28D9;
+    --text-color: #4B2D77;
+    --text: #000;
     
+}
+
+.tema-dark {
+    --background-color: #2E1A4B;
+  --contrast-color: #4B2D77;
+  --highlight-color: #8C3D9D;
+  --text-color: #E8D9F0;
+  --text: #fff
 }
 
 * {
@@ -23,13 +21,16 @@
 }
 
 body {
-    background-color: var(--cor-primaria);
+    background-color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
+    a {
+        color: var(--text-color);
+    }
 }
 
 nav {
     height: 70px;
-    border-bottom: 1px solid #d5cece;
+    border-bottom: 1px solid var(--contrast-color);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,7 +40,7 @@ nav {
             left: 0;         /* Alinha o nav ao lado esquerdo da tela */
             width: 100%;     /* Faz o nav ocupar toda a largura da tela */
     font-size: 1.3rem;
-    background-color: var(--cor-primaria);
+    background-color: var(--background-color);
 }
 ul {
     display: flex;
@@ -57,13 +58,14 @@ ul {
     margin-left: 105px;
     font-size: 30px;
     h2{
-        color: var(--cor-destaque);
+        color: var(--highlight-color);
         font-weight: 800;
         font-size: 3.2rem;
     }
     p{
         font-weight: 700;
         font-size: 2.5rem;
+        color: var(--text);
     }
     a{
         font-size: 1.5rem;
@@ -71,7 +73,7 @@ ul {
 }
 
 .titulo {
-    
+    color: var(--text);
     font-size: 2rem;
 }
 
@@ -90,13 +92,17 @@ ul {
         .skill-individual{
             width: 200px;
             height: 150px;
-            background-color: var(--cor-secundaria);
+            background-color: var(--contrast-color);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 10%;
             gap: 5px;
+
+            p {
+                color: var(--text);
+            }
         }
     }
     p{
