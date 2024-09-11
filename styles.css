@@ -1,5 +1,5 @@
 :root {
-    --background-color: #E8D9F0;
+    --background-color: #f9f8fa;
     --contrast-color: #C3A9E0;
     --highlight-color: #6D28D9;
     --text-color: #4B2D77;
@@ -8,7 +8,7 @@
 }
 
 .tema-dark {
-    --background-color: #2E1A4B;
+    --background-color: #0f061d;
   --contrast-color: #4B2D77;
   --highlight-color: #8C3D9D;
   --text-color: #E8D9F0;
@@ -75,6 +75,10 @@ ul {
     }
     a{
         font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    a:hover{
+        color: var(--highlight-color);
     }
 }
 
