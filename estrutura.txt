@@ -1,8 +1,26 @@
-Estrutura do site:
-    1. Menu de navegação - nav
-    2. Conteúdo principal contendo x sections:
-        a. Section de apresetação
-        b. Section sobre habilidades
-        c. Section sobre projetos
-
-    3. Rodapé para conter o autor do site
+/assets
+    /icons          (para arquivos SVG ou ícones)
+        bootstrap.svg
+        css.svg
+        html.svg
+        javascript.svg
+        python.svg
+        wordpress.svg
+        git.svg
+    /images         (para imagens PNG e outros formatos)
+        claro.png
+        escuro.png
+        figma.png
+        github.png
+        gmail.png
+        linkedin.png
+        logo.png
+/readme             (seu README pode ficar aqui ou na raiz)
+    README.md
+/pages              (para páginas HTML adicionais)
+    ferramentaweb.html
+    fraseMotivacional.html
+/css                (para estilos CSS)
+    styles.css
+/js                 (para scripts JavaScript)
+    script.js
